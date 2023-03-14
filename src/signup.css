@@ -1,0 +1,64 @@
+.sign{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr .5fr .8fr .8fr .8fr .8fr .8fr;
+    grid-column-gap: 10px;
+    /* grid-row-gap: 10px; */
+    
+    justify-items: center; 
+     /* align-items: center;  */
+    }
+    .sign input{
+line-height: 1.2rem;
+width: 40vw;
+max-width: 90vw;
+height: 60%;
+border-radius: 8px;
+padding: 5px 16px;
+outline: none;
+border: 1px solid transparent;
+
+    }
+    .sign input:last-of-type{
+        background-color:  #FF8C38;
+    }
+    .sign input:focus{
+        border: 1px solid  #FF8C38 ;
+    }
+    .already a{
+        color:#FF8C38;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    @media only screen and (max-width: 768px){
+        .sign input{
+            line-height: 1.2rem;
+            width: 80vw;
+        }
+        
+        
+        
+
+
+
+    }
+    .error{
+         margin-top: 5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            
+    }
+    .error button{
+        outline: none;
+        border: none;
+        background-color:#16161D;
+        color:white;
+        padding:12px 5rem;
+
+    }
+    

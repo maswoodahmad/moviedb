@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.App {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(254, 247, 238);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+
+
+}
+a{
+  text-decoration: none;
+  all:unset;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.home{
+  background-image: url(./Assest/image53.png);
+  background-size: cover;
+  width:100vw;
+height: 85vh; 
+  font-family: 'Inter', sans-serif;
+display: flex;
+justify-content:flex-start;
+flex-direction: column;
+ text-align: center;
+padding: 0 auto;
+ word-break:break-word;
+ padding-bottom: 2.5em;
+
+}
+.navbar{
+background-color: rgb(254, 247, 238);
+display: flex;
+justify-content: flex-end;
+line-height: 1.5em;
+color:rgb(170,170,165);
+height: 5vh;
+
+
+}
+.navbar>a{
+  list-style: none;
+  text-decoration: none;
+
+}
+.navbar>  a:first-of-type{
+ 
+  color:black;
+  font-family: 'Inter', sans-serif;
+  margin-right: auto;
+  font-size: calc(2vw + 3vh);
+  font-weight:900;
+  
+  
+  
+}
+
+.navbar > a:nth-last-of-type(-n+4){
+  
+  margin:5px 10px 5px 10px;
+
+  font-weight: 300;
+ font-size: 1em;
+ text-decoration: none;
+ color:#161616;
+ line-height: 1.2rem;
+
+}
+.navbar a:nth-last-of-type(-n+4):hover{
+  transform: scale(1.2);
+}
+
+.navbar > a:nth-last-of-type(-n+4):hover{
+  
+  text-decoration: underline;
+}
+.home p:first-of-type{
+  font-size: 2em;
+  font-weight: 500;
+  font-family: Inter;
+  color:white;
+line-height: 1.2em;
+text-align: center;
+margin-top: 2em;
+margin-bottom: 2em;
+word-break:break-word;
+
+
+}
+.home p{
+
+font-size: 1.5em;
+color:white;
+margin-bottom: 10%;
+word-break: break-all;
+word-break:break-word;
+padding: 0px 10px;
+line-height: 1.2;
+}
+.home button{
+  background-color:#FF8C38;
+  border:none;
+  border-radius: 5px;
+  outline: none;
+
+/* margin-bottom: 15em; */
+margin:0 auto;
+
+padding: 15px 45px;
+font-size: 1.5em;
+color:white;
+line-height: 23px;
+font-weight: 700;
+text-align: center;
+
+  }
+.footer{
+ 
+  color: #AAAAAA;
+  background-color:  #252525;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 500;
+ padding: 20px;
+ width: 100vw;
+/* position: absolute;  */
+/* bottom: 0;  */
+/* height: 2.5em; */
+ /* margin-top: 15px; */
+
+ 
+ 
+  }
+.about{
+  padding-bottom: 2.5em;
+}
+  
+.about img{
+max-height: auto;
+width: 100%;
+margin-right: 0;
+margin-left: 0;
+}
+.about h1{
+  font-size: 2em;
+ text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  margin-left:30px;
+    margin-right: 30px;
+  text-align: left;
+}
+
+.about p{
+  margin-left:30px;
+  margin-right: 30px;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: Inter;
+  font-weight: 500;
+ 
+  
+}
+.about div{
+  margin-left:30px;
+  margin-right: 30px;
+  background-color:  #FFCC8D;
+color: #161616; 
+font-size: 140%;
+ padding-left: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin-bottom: 10px;
+ height: 20%;
+ padding-bottom: 20px;
+}
+.about a{
+  color:white;
+  vertical-align: center;
+  background-color: #161616;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  
+
+  margin-left:30px;
+  margin-right: 30px;
+ margin-bottom: 10px;
+
+}
+
+@media only screen and (max-width: 766px){
+
+.navbar>a:first-of-type{
+
+font-size: 1rem;
+
+}
+
+.navbar > a:nth-last-of-type(-n+4){
+  font-size: 1rem;
+  margin: 5px;
+}
+
+}

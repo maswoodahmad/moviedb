@@ -1,0 +1,109 @@
+.host {  display: grid;
+    grid-template-columns: 1.7fr;
+     grid-template-rows: 1fr 2fr 1.5fr 10fr; 
+    gap: 0px 0px;
+    text-align: left;
+    height: 100vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "dashboard"
+      "welcome"
+      "reviews"
+      "vans";
+  }
+  
+  .dashboard { grid-area: dashboard; 
+
+display: flex;
+list-style: none;
+margin: 10px 10px;
+
+
+}
+ul.dashboard{
+    padding: 0;
+}
+.dashboard a{
+    padding: 5px 10px 5px 0;
+}
+  .dashboard a:hover{
+    text-decoration: underline;
+    font-weight: 300;
+  }
+  .welcome {  
+    text-align: left;
+    background-color: rgb(251,235,211);
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    grid-template-rows: .4fr .2fr .4fr;
+    gap: 0px 0px;
+    padding: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+    grid-area: welcome;
+  }
+  
+  .reviews {  
+    background-color: rgb(249,222,183);
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    padding: 10px 10px;
+    grid-template-areas:
+      ". .";
+    grid-area: reviews;
+  }
+  
+  .vans {  display: grid;
+    grid-template-columns: 1fr .2fr;
+    grid-template-rows: .1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      "van-grid van-grid";
+    grid-area: vans;
+    padding: 10px 10px;
+    
+  }
+  
+  .van-grid { grid-area: van-grid; 
+}
+  ul.van-grid{
+    margin: 0;
+    padding: 0;
+  }
+
+.welcome p:first-of-type{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+.welcome p:nth-child(5){
+font-size: 2rem;
+margin-top:0;
+margin-bottom: 0;
+font-weight: 800;
+}
+.welcome p:nth-child(3)>span{
+    text-decoration: underline;
+}
+.welcome p:nth-child(4){
+    font-weight: 300;
+}
+.reviews p:nth-child(2){
+    font-weight: 300;
+}
+.reviews p:nth-child(1){
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.vans p:first-child{
+    font-size: 1.2rem;
+    font-weight: 600;
+}

@@ -1,0 +1,75 @@
+.login-page {
+  
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center; 
+    justify-items: center;
+    margin-bottom: 2rem;
+    }
+
+
+ .login-page h1{
+   /* all:unset; */
+    text-align: center;
+    font-size: 1.2rem;
+    
+ }   
+ .login-page input{
+  border: none;
+  outline: none;
+   width: 40vw;
+   height: 80%;
+   padding: 10px 16px 10px 16px;
+   font-size: 1.1rem;
+    border-radius: 8px;
+    color:black;
+ }
+ .login-page input:focus{
+   border: 1px solid  #FF8C38 ;
+   outline: invert;
+ }
+ .login-page input:last-of-type{
+    background-color: #FF8C38;
+    color:white;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    
+ }
+ .signup{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0px 10px;
+ }
+ .signup a{
+    color:#FF8C38;
+    font-weight: 700;
+ }
+
+
+    
+ @media only screen and (max-width: 768px){
+
+    .login-page input{
+        margin: 10px 16px;
+        max-width: 80vw;
+        width: 80vw;
+        height: 60%;
+        border: none;
+        outline: none;
+      }
+      
+      .panel a{
+         margin: 5px ;
+      
+       }
+
+ }
+ .panel a{
+   margin: 10px ;
+
+ }
